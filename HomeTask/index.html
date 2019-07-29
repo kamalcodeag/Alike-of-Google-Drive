@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ContextMenu by Kamal Guliyev</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 pr-0">
+                <div class="s-aside d-flex align-items-center">
+                    <ul class="m-0 p-0 list-unstyled d-flex flex-column justify-content-around">
+                        <li class="mb-2">
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">My Drive</a>
+                        </li>
+                        <li class="mb-2">
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">Team Drives</a>
+                        </li>
+                        <li class="mb-2">
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">Shared with me</a>
+                        </li>
+                        <li class="mb-2">
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">Recent</a>
+                        </li>
+                        <li class="mb-2">
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">Starred</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a class="text-decoration-none text-dark" href="#">Trash</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 s-area">
+                <div class="s-inner pt-5 px-4 d-flex flex-wrap"></div>
+
+                <div class="s-menu d-none position-fixed">
+                    <ul class="m-0 p-0 ml-3 list-unstyled d-flex flex-column justify-content-center">
+                        <li class="mb-2 active new">
+                            <span class="mr-2"><i class="fas fa-folder-plus"></i></span>New Folder</li>
+                        <li class="mb-2">
+                            <span class="mr-2"><i class="fas fa-file-upload"></i></span>Upload Files</li>
+                        <li class="mb-2">
+                                <span class="mr-2"><i class="fas fa-file-import"></i></span>Upload Folder</li>
+                        <li class="mb-2">
+                                <span class="mr-2"><i class="fas fa-file-alt"></i></span>Google Docs</li>
+                        <li class="mb-2">
+                                <span class="mr-2"><i class="fas fa-file-excel"></i></span>Google Sheets</li>
+                        <li>
+                                <span class="mr-2"><i class="fas fa-sliders-h"></i></span>Google Slides</li>
+                    </ul>
+                </div>
+
+                <div class="s-input-box d-none p-3 position-fixed">
+                    <div class="s-heading d-flex justify-content-between">
+                        <span>New Folder</span> <span><i class="fas fa-times"></i></span>
+                    </div>
+                    <input id="input" class="mt-3" type="text">
+                    <div class="s-btn-group mt-3 d-flex justify-content-end">
+                        <button class="cancel mr-2 px-3 py-1">CANCEL</button>
+                        <button class="create active px-3 py-1">CREATE</button>
+                    </div>
+                </div>
+
+                <div class="s-remove d-none position-fixed align-items-center justify-content-center">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li class="active">Remove</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
